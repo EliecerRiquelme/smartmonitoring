@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* inicio------Todas las paginas ---------*/
+/*----header---*/
+
+.header{
+    position: sticky;
+    top: 0px;
+}
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    color: red;
+    text-align:center;
+ }
+
+ header{
+    background-color: rgba(2, 2, 2, 0.781);
+    color: white;
+    padding: 12px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+ }
+
+ header nav ul {
+    display: flex;
+    justify-content: space-around;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+
+ }
+/*----main---*/
+main{
+    background-image: url(../assets/img/fondo-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+
+ }
+
+/*----footer---*/
+
+footer{
+    background-image: linear-gradient( black , rgb(65, 55, 55));
+}
+
+footer h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.div-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-redes i {
+    font-size: 2rem;
+   color: rgb(28, 28, 175);
+   padding: 6px;
+
+}
+
+h4{
+    text-align: center;
+    font-size: 0.5rem;
+    color: darkred;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+/* fin------Todas las paginas ---------*/
+/*----------------------------Trabajando a menos de 480px-----------*/
+/* inicio------ pagina -  index ---------*/
+
+/*----main---*/
+
+.seccion-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+}
+.index h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.index p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+}
+
+.index h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.index h3{
+    color: darkred;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.index p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+
+}
+
+ .articulo-1{
+    text-align: center;
+    justify-content: center;
+
+ }
+
+.tarjeta-equipos{
+    border: 2px solid red;
+    border-radius: 6px;
+
+    min-width: 200px;
+    height: 230px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    margin: 0 10px;
+
+}
+
+.tarjeta-equipos img{
+    width: 80%;
+    height: 60%;
+
+    border-radius: 8px;
+
+}
+
+.div-equipos{
+padding: 15px;
+
+display: flex;
+overflow-x: scroll;
+
+}
+/* fin------ pagina -  index ---------*/
+
+/* inicio------ pagina -  nosotros ---------*/
+/*----main---*/
+.seccion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.nosotros h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.nosotros p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+}
+
+.nosotros h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.nosotros h3{
+    color: darkred;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nosotros p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+
+}
+.div-nosotros{
+    text-align: center;
+}
+
+iframe{
+    width: 80%;
+    margin: 10vw;
+}
+
+/* fin------ pagina -  nosotros ---------*/
+
+/* inicio------ pagina -  contacto ---------*/
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    
+}
+
+/* fin------ pagina -  contacto ---------*/
+
+/* inicio------ pagina -  Productos ---------*/
+/*----main---*/
+.productos h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.productos p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+}
+.productos-p{
+    text-align: center;
+}
+
+.productos h2{
+    color: rgba(236, 11, 11, 0.836);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.productos h3{
+    color: darkred;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productos p{
+    color: white;
+    font-family: cursive;
+    font-size: 0.6rem;
+
+}
+
+/* fin------ pagina -  Productos ---------*/
+
+/*----------------------------Trabajando  sobre 480px y menos de 1024 px-----------*/
+
+
+@media (min-width: 480px){
+/* inicio------ pagina -  index ---------*/
+/*----main---*/
+    .index h2{
+        font-size: 2rem;
+    }
+    .index h3{
+        font-size: 1.3rem;
+    }
+    .index p{
+        font-size: 0.8rem;
+    
+    }
+    .tarjeta-equipos{
+       
+        min-width: 260px;
+        height: 300px;
+    
+    }
+/* fin------ pagina -  index ---------*/
+/* inicio------ pagina -  Nosotros ---------*/
+/*----main---*/
+.nosotro h2{
+    font-size: 2rem;
+}
+.nosotros h3{
+    font-size: 1.3rem;
+}
+.nosotros p{
+    font-size: 0.8rem;
+
+}
+
+/* fin------ pagina -  nosotros ---------*/
+
+/* inicio------ pagina -  Productos ---------*/
+/*----main---*/
+.productos h2{
+    font-size: 2rem;
+}
+.productos h3{
+    font-size: 1.3rem;
+}
+.productos p{
+    font-size: 0.8rem;
+
+}
+
+/* fin------ pagina -  Productos ---------*/
+
+}
+/*----------------------------Trabajando sobre 1024 px-----------*/
+
+@media (min-width: 1024px){
+/* inicio------ pagina -  index ---------*/
+/*----aplicando grid a estructura ---*/
+.body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vh 1fr 1fr 20vh;
+
+    grid-template-areas: 
+    "header header header"
+    "index index index"
+    "index index index"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+.index{
+    grid-area: index;
+}
+.footer{
+    grid-area: footer;
+}
+
+/*----header---*/
+      
+header{
+       
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+nav{
+    width: 45%;
+}
+/*----main---*/
+
+.index h2{
+    font-size: 3rem;
+}
+
+.index h3{
+    font-size: 2rem;
+}
+
+.index p{
+    font-size: 1rem;
+}
+
+.div-equipos{
+    justify-content: space-around;
+}
+
+.div-equipos{
+   
+    overflow-x:hidden;
+    
+    }
+
+/* fin------ pagina -  index ---------*/
+
+/* inicio------ pagina -  nosotros ---------*/
+/*----main---*/
+.seccion-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+}
+
+.nosotros{
+    text-align: center;
+}
+
+.nosotro h2{
+    font-size: 3rem;
+}
+.nosotros h3{
+    font-size: 2rem;
+}
+.nosotros p{
+    font-size: 1rem;
+
+}
+
+.div-nosotros{
+    padding: 20px;
+}
+/* fin------ pagina -  nosotros ---------*/
+
+/* inicio------ pagina -  productos ---------*/
+/*----main---*/
+
+.productos{
+    text-align: center;
+}
+
+.productos h2{
+    font-size: 3rem;
+}
+.productos h3{
+    font-size: 2rem;
+}
+.productos p{
+    font-size: 1rem;
+}
+
+/* fin------ pagina -  productos ---------*/
+
+}
+
+
+
+
