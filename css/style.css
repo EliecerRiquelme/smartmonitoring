@@ -54,7 +54,7 @@ main{
 /*----footer---*/
 
 footer{
-    background-image: linear-gradient( black , rgb(65, 55, 55));
+    background: linear-gradient(black , rgb(65, 55, 55), rgb(14, 13, 13) , white);
 }
 
 footer h2{
@@ -83,6 +83,10 @@ h4{
     background-color: rgba(0, 0, 0, 0.877);
 }
 
+i:hover{
+    transform: scale(2);
+}
+
 /* fin------Todas las paginas ---------*/
 /*----------------------------Trabajando a menos de 480px-----------*/
 /* inicio------ pagina -  index ---------*/
@@ -90,7 +94,7 @@ h4{
 /*----main---*/
 
 .seccion-1{
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     height: 40vh;
@@ -126,6 +130,10 @@ h4{
 
 }
 
+button:hover{
+    transform: scale(2);
+}
+
  .articulo-1{
     text-align: center;
     justify-content: center;
@@ -147,7 +155,7 @@ h4{
 
     padding: 10px;
 
-    margin: 0 10px;
+    margin: 10px;
 
 }
 
@@ -162,8 +170,8 @@ h4{
 .div-equipos{
 padding: 15px;
 
-display: flex;
-overflow-x: scroll;
+display: block;
+
 
 }
 /* fin------ pagina -  index ---------*/
@@ -293,6 +301,14 @@ form{
         height: 300px;
     
     }
+
+    .div-equipos{
+        
+        display: flex;
+        overflow-x: scroll;
+        
+    }
+
 /* fin------ pagina -  index ---------*/
 /* inicio------ pagina -  Nosotros ---------*/
 /*----main---*/
