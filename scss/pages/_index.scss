@@ -1,0 +1,57 @@
+/* inicio------ pagina -  index ---------*/
+
+.index{
+    .seccion-1{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40vh;
+        .articulo-1{
+            text-align: center;
+            justify-content: center;
+            h2{
+                color: rgba(236, 11, 11, 0.836);
+            }
+            p{
+                color: white;
+            }
+         }
+    }
+    .equipos{
+        h2{
+            color: rgba(236, 11, 11, 0.836);
+        }
+        p{
+            color: white;
+        }   
+    }
+}
+
+
+
+@media (min-width: 1024px){
+    /*----aplicando grid a estructura ---*/
+    .body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15vh 1fr 1fr 20vh;
+    
+        grid-template-areas: 
+        "header header header"
+        "index index index"
+        "index index index"
+        "footer footer footer";
+    }
+    
+    .header {
+        grid-area: header;
+    }
+    .index{
+        grid-area: index;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}    
+
+/* fin------ pagina -  index ---------*/

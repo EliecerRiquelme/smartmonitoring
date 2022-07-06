@@ -1,0 +1,26 @@
+.productos{
+    .seccion-1{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40vh;
+        .articulo-1{
+            text-align: center;
+            justify-content: center;
+            h2{
+                color: rgba(236, 11, 11, 0.836);
+            }
+            p{
+                color: white;
+            }
+         }
+    }
+    .equipos{
+        h2{
+            color: rgba(236, 11, 11, 0.836);
+        }
+        p{
+            color: white;
+        }   
+    }
+}

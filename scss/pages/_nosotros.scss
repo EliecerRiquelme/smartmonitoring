@@ -1,0 +1,43 @@
+/* inicio------ pagina -  nosotros ---------*/
+
+.nosotros{
+    h2{
+        color: rgba(236, 11, 11, 0.836);
+    }
+    .seccion-nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        article{
+            h3{
+                color: darkred;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+    .div-nosotros{
+        iframe{
+            width: 80%;
+            margin: 10vw;
+        }
+    }  
+}
+
+@media (min-width: 1024px){
+
+    .nosotros{
+        text-align: center;
+        .seccion-nosotros{
+            flex-direction: row;
+            padding: 40px;
+        }
+        .div-nosotros{
+            padding: 20px;
+        }
+    }
+}
+/* fin------ pagina -  nosotros ---------*/

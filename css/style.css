@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+}
+
+p {
+  font-family: cursive;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+button {
+  margin-top: 6px;
+}
+button:hover {
+  transform: scale(2);
+}
+
+.div-equipos {
+  padding: 15px;
+  display: block;
+}
+.div-equipos .tarjeta-equipos {
+  border: 2px solid red;
+  border-radius: 6px;
+  min-width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.div-equipos .tarjeta-equipos h3 {
+  color: darkred;
+}
+.div-equipos .tarjeta-equipos p {
+  color: white;
+}
+.div-equipos .tarjeta-equipos img {
+  width: 80%;
+  height: 60%;
+  border-radius: 8px;
+}
+
+@media (min-width: 480px) {
+  .div-equipos {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .div-equipos .tarjeta-equipos {
+    min-width: 280px;
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .div-equipos {
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+  .div-equipos .tarjeta-equipos {
+    min-width: 320px;
+    height: 450px;
+  }
+}
+header {
+  background-color: rgba(2, 2, 2, 0.781);
+  color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header h1 {
+  color: red;
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav {
+    width: 55%;
+  }
+}
+main {
+  background-image: url(/assets/img/fondo-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+}
+
+/* inicio------ pagina -  index ---------*/
+.index .seccion-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+.index .seccion-1 .articulo-1 {
+  text-align: center;
+  justify-content: center;
+}
+.index .seccion-1 .articulo-1 h2 {
+  color: rgba(236, 11, 11, 0.836);
+}
+.index .seccion-1 .articulo-1 p {
+  color: white;
+}
+.index .equipos h2 {
+  color: rgba(236, 11, 11, 0.836);
+}
+.index .equipos p {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  /*----aplicando grid a estructura ---*/
+  .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vh 1fr 1fr 20vh;
+    grid-template-areas: "header header header" "index index index" "index index index" "footer footer footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .index {
+    grid-area: index;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+/* fin------ pagina -  index ---------*/
+/* inicio------ pagina -  nosotros ---------*/
+.nosotros h2 {
+  color: rgba(236, 11, 11, 0.836);
+}
+.nosotros .seccion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.nosotros .seccion-nosotros article h3 {
+  color: darkred;
+}
+.nosotros .seccion-nosotros article p {
+  color: white;
+}
+.nosotros .div-nosotros iframe {
+  width: 80%;
+  margin: 10vw;
+}
+
+@media (min-width: 1024px) {
+  .nosotros {
+    text-align: center;
+  }
+  .nosotros .seccion-nosotros {
+    flex-direction: row;
+    padding: 40px;
+  }
+  .nosotros .div-nosotros {
+    padding: 20px;
+  }
+}
+/* fin------ pagina -  nosotros ---------*/
+.productos .seccion-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+.productos .seccion-1 .articulo-1 {
+  text-align: center;
+  justify-content: center;
+}
+.productos .seccion-1 .articulo-1 h2 {
+  color: rgba(236, 11, 11, 0.836);
+}
+.productos .seccion-1 .articulo-1 p {
+  color: white;
+}
+.productos .equipos h2 {
+  color: rgba(236, 11, 11, 0.836);
+}
+.productos .equipos p {
+  color: white;
+}
+
+/* inicio------ pagina -  contacto ---------*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100vh;
+}
+
+/* fin------ pagina -  contacto ---------*/
+footer {
+  background: linear-gradient(black, rgb(65, 55, 55), rgb(14, 13, 13), white);
+}
+footer h2 {
+  color: rgba(236, 11, 11, 0.836);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+footer .div-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .div-redes i {
+  font-size: 2rem;
+  color: rgb(28, 28, 175);
+  padding: 6px;
+}
+footer .div-redes i:hover {
+  transform: scale(2);
+}
+footer h4 {
+  text-align: center;
+  font-size: 0.5rem;
+  color: darkred;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+/*# sourceMappingURL=style.css.map */

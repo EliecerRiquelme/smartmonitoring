@@ -1,0 +1,53 @@
+.div-equipos{
+    padding: 15px;
+    display: block;
+    .tarjeta-equipos{
+        border: 2px solid red;
+        border-radius: 6px;
+        min-width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        h3{
+            color: darkred;
+        }
+        p{
+            color: white;
+        }
+        img{
+            width: 80%;
+            height: 60%;
+            border-radius: 8px;
+        }
+
+    }
+}
+
+
+@media (min-width: 480px){
+   
+    .div-equipos{
+        display: flex;
+        overflow-x: scroll;
+        .tarjeta-equipos{
+            min-width: 280px;
+            height: 400px;
+        }
+    } 
+}    
+
+@media (min-width: 1024px){
+
+    .div-equipos{
+        justify-content: space-around;
+        overflow-x:hidden;
+        .tarjeta-equipos{
+            min-width: 320px;
+            height: 450px;
+        }
+    }
+}
