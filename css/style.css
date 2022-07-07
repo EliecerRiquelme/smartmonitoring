@@ -141,7 +141,7 @@ header nav ul li a {
   }
 }
 main {
-  background-image: url(/assets/img/fondo-home.png);
+  background-image: url(../assets/img/fondo-home.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15px;
