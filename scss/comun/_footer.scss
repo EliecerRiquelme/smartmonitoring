@@ -1,3 +1,27 @@
+$redes:(
+    facebook: blue,
+    instragram: rgb(211, 131, 26),
+    twitter: rgb(17, 211, 218),
+    linkedin:rgb(0, 132, 255),
+);
+
+
+.bi-facebook{
+    color: map-get($map: $redes, $key:facebook );
+}
+
+
+.bi-instagram{
+    color: map-get($map: $redes, $key:instragram );
+}
+.bi-twitter{
+    color: map-get($map: $redes, $key:twitter );
+}
+.bi-linkedin{
+    color: map-get($map: $redes, $key:linkedin );
+}
+
+
 
 footer{
     background: linear-gradient(black , rgb(65, 55, 55), rgb(14, 13, 13) , white);
@@ -13,7 +37,6 @@ footer{
         justify-content: space-around;
         i{
             font-size: 2rem;
-            color: rgb(28, 28, 175);
             padding: 6px;
             &:hover{
                 transform: scale(2);

@@ -14,7 +14,6 @@ header{
         ul{
             display: flex;
             justify-content: space-around;
-            border-right: 2px solid white;
             border-left: 2px solid white;
             li{
                 list-style: none;
@@ -32,7 +31,10 @@ header{
         flex-direction:row;
         justify-content: space-around;
         nav{
-            width: 55%;
+            width: 45%;
+            li{
+                padding: 15px;
+            }
         }
     }
     

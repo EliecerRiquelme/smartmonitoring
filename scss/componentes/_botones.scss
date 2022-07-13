@@ -5,3 +5,23 @@ button{
     }
 }
 
+.boton{
+    background-color: white;
+    color: red;
+    border-radius: 8px;
+    padding: 4px;
+    margin-top: 5x;
+
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+
+.boton2{
+    @extend .boton;
+    background-color: gray;
+    color: white;
+    &:hover{
+        filter:opacity(80%);
+    }
+}

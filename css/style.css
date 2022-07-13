@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
 }
 
 h3 {
@@ -40,6 +49,10 @@ p {
   }
 }
 @media (min-width: 1024px) {
+  .titulo {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
   h2 {
     font-size: 2.5rem;
   }
@@ -55,6 +68,25 @@ button {
 }
 button:hover {
   transform: scale(2);
+}
+
+.boton, .boton2 {
+  background-color: white;
+  color: red;
+  border-radius: 8px;
+  padding: 4px;
+  margin-top: 5x;
+}
+.boton:hover, .boton2:hover {
+  transform: scale(1.5);
+}
+
+.boton2 {
+  background-color: gray;
+  color: white;
+}
+.boton2:hover {
+  filter: opacity(80%);
 }
 
 .div-equipos {
@@ -120,7 +152,6 @@ header h1 {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  border-right: 2px solid white;
   border-left: 2px solid white;
 }
 header nav ul li {
@@ -137,7 +168,10 @@ header nav ul li a {
     justify-content: space-around;
   }
   header nav {
-    width: 55%;
+    width: 45%;
+  }
+  header nav li {
+    padding: 15px;
   }
 }
 main {
@@ -207,9 +241,12 @@ main {
 .nosotros .seccion-nosotros article p {
   color: white;
 }
+.nosotros .div-nosotros p {
+  color: white;
+}
 .nosotros .div-nosotros iframe {
   width: 80%;
-  margin: 10vw;
+  margin: 5vw;
 }
 
 @media (min-width: 1024px) {
@@ -222,6 +259,9 @@ main {
   }
   .nosotros .div-nosotros {
     padding: 20px;
+  }
+  .nosotros .div-nosotros iframe {
+    height: 80vh;
   }
 }
 /* fin------ pagina -  nosotros ---------*/
@@ -259,6 +299,22 @@ form {
 }
 
 /* fin------ pagina -  contacto ---------*/
+.bi-facebook {
+  color: blue;
+}
+
+.bi-instagram {
+  color: rgb(211, 131, 26);
+}
+
+.bi-twitter {
+  color: rgb(17, 211, 218);
+}
+
+.bi-linkedin {
+  color: rgb(0, 132, 255);
+}
+
 footer {
   background: linear-gradient(black, rgb(65, 55, 55), rgb(14, 13, 13), white);
 }
@@ -275,7 +331,6 @@ footer .div-redes {
 }
 footer .div-redes i {
   font-size: 2rem;
-  color: rgb(28, 28, 175);
   padding: 6px;
 }
 footer .div-redes i:hover {
