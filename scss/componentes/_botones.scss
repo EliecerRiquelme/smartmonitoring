@@ -21,6 +21,7 @@ button{
     @extend .boton;
     background-color: gray;
     color: white;
+    transition: 200ms;
     &:hover{
         filter:opacity(80%);
     }

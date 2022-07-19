@@ -34,7 +34,7 @@ h4 {
 
 p {
   font-family: cursive;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 480px) {
@@ -43,9 +43,6 @@ p {
   }
   h3 {
     font-size: 1.3rem;
-  }
-  p {
-    font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -61,6 +58,9 @@ p {
   }
   h4 {
     font-size: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
   }
 }
 button {
@@ -84,6 +84,7 @@ button:hover {
 .boton2 {
   background-color: gray;
   color: white;
+  transition: 200ms;
 }
 .boton2:hover {
   filter: opacity(80%);
@@ -94,19 +95,21 @@ button:hover {
   display: block;
 }
 .div-equipos .tarjeta-equipos {
-  border: 2px solid red;
+  border: 2px solid rgba(34, 30, 30, 0.678);
   border-radius: 6px;
   min-width: 200px;
-  height: 300px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 6px;
   margin: 10px;
+  background-color: rgba(104, 102, 102, 0.377);
+  box-shadow: 2px 2px 5px white;
 }
 .div-equipos .tarjeta-equipos h3 {
-  color: darkred;
+  color: rgb(240, 8, 8);
 }
 .div-equipos .tarjeta-equipos p {
   color: white;

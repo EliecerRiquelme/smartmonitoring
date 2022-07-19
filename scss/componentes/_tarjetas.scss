@@ -2,18 +2,20 @@
     padding: 15px;
     display: block;
     .tarjeta-equipos{
-        border: 2px solid red;
+        border: 2px solid rgba(34, 30, 30, 0.678);
         border-radius: 6px;
         min-width: 200px;
-        height: 300px;
+        height: 340px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 6px;
         margin: 10px;
+        background-color: rgba(104, 102, 102, 0.377);
+        box-shadow: 2px 2px 5px white;
         h3{
-            color: darkred;
+            color: rgb(240, 8, 8);
         }
         p{
             color: white;
