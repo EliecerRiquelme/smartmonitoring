@@ -13,7 +13,7 @@ button{
     margin-top: 5x;
 
     &:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 
@@ -24,5 +24,6 @@ button{
     transition: 200ms;
     &:hover{
         filter:opacity(80%);
+        background-color: black;
     }
 }

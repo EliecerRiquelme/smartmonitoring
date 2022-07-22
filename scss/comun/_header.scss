@@ -9,8 +9,12 @@ header{
     h1{
         color: red;
         text-align:center;
+        b{
+            color: white;
+        }
     }
     nav{
+        border-radius: 10px;
         ul{
             display: flex;
             justify-content: space-around;

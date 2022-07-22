@@ -12,8 +12,14 @@
         align-items: center;
         padding: 6px;
         margin: 10px;
-        background-color: rgba(104, 102, 102, 0.377);
-        box-shadow: 2px 2px 5px white;
+        background-color: rgba(104, 102, 102, 0.192);
+        transition: 100ms;
+        &:hover{
+            border: 2px solid rgba(34, 30, 30, 0.678);
+            background-color: rgba(25, 17, 131, 0.884);
+            box-shadow: 2px 4px 10px white;
+            transform: scale(1.1);
+        }
         h3{
             color: rgb(240, 8, 8);
         }
@@ -48,7 +54,7 @@
         justify-content: space-around;
         overflow-x:hidden;
         .tarjeta-equipos{
-            min-width: 320px;
+            max-width: 420px;
             height: 450px;
         }
     }

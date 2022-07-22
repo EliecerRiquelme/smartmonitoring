@@ -4,7 +4,10 @@
 }
 
 .titulo{
-    @include fontsize(2rem,700);
+    @include fontsize(1.8rem,700);
+    b{
+        @include fontsize(2rem,700);
+    }
 }
 
 .subtitulo{
@@ -26,8 +29,7 @@ h4{
     font-size: 0.8rem;
 }
 p{
-    font-family: cursive;
-    font-size: 1rem; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @media (min-width: 480px){
@@ -55,8 +57,6 @@ p{
     h4{
         font-size: 1rem;
     }
-    p{
-        font-size: 1.2rem;
-    }
+   
 }
 
