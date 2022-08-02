@@ -33,7 +33,7 @@ h3 {
 
 h4 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 0.8rem;
+  font-size: 10px;
 }
 
 p {
@@ -60,7 +60,7 @@ p {
     font-size: 1.6rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 15px;
   }
 }
 button {
@@ -331,32 +331,85 @@ form {
   color: rgb(0, 132, 255);
 }
 
-footer {
-  background: linear-gradient(black, rgb(65, 55, 55), rgb(14, 13, 13), white);
+footer .div-footer {
+  background: gainsboro;
+  justify-content: center;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 220px 220px 200px 40px;
+  grid-template-areas: "subtitulo " "footer-contacto" "footer-ubicacion" "footer-redes" "footer-firma";
 }
-footer h2 {
+footer .div-footer .subtitulo {
+  grid-area: subtitulo;
+}
+footer .div-footer .footer-contacto {
+  grid-area: footer-contacto;
+}
+footer .div-footer .footer-ubicacio {
+  grid-area: footer-ubicacion;
+}
+footer .div-footer .footer-redes {
+  grid-area: footer-redes;
+}
+footer .div-footer .footer-firma {
+  grid-area: footer-firma;
+}
+footer .div-footer h2 {
   color: rgba(236, 11, 11, 0.836);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   text-align: center;
 }
-footer .div-redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+footer .div-footer .footer-contacto {
+  align-items: center;
 }
-footer .div-redes i {
-  font-size: 2rem;
-  padding: 6px;
+footer .div-footer .footer-contacto ul {
+  list-style: none;
 }
-footer .div-redes i:hover {
+footer .div-footer .footer-contacto ul li {
+  text-decoration: none;
+}
+footer .div-footer .footer-ubicacion iframe {
+  border-radius: 10px;
+  border: red 2px solid;
+}
+footer .div-footer .footer-redes i {
+  font-size: 2.5rem;
+  padding: 12px;
+}
+footer .div-footer .footer-redes i:hover {
   transform: scale(2);
 }
 footer h4 {
+  padding: 10px;
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
   color: darkred;
-  background-color: rgba(0, 0, 0, 0.877);
+}
+
+@media (min-width: 1024px) {
+  footer .div-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 200px 40px;
+    grid-template-areas: "subtitulo subtitulo subtitulo" "footer-contacto footer-ubicacion footer-redes" "footer-firma footer-firma footer-firma";
+  }
+  footer .div-footer .subtitulo {
+    grid-area: subtitulo;
+  }
+  footer .div-footer .footer-contacto {
+    grid-area: footer-contacto;
+  }
+  footer .div-footer .footer-ubicacio {
+    grid-area: footer-ubicacion;
+  }
+  footer .div-footer .footer-redes {
+    grid-area: footer-redes;
+  }
+  footer .div-footer .footer-firma {
+    grid-area: footer-firma;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

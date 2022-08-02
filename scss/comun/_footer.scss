@@ -22,33 +22,119 @@ $redes:(
 }
 
 
+  footer{
+       
+        .div-footer{
+        background: gainsboro;
+        justify-content: center;
 
-footer{
-    background: linear-gradient(black , rgb(65, 55, 55), rgb(14, 13, 13) , white);
-    h2{
-        color: rgba(236, 11, 11, 0.836);
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .div-redes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        i{
-            font-size: 2rem;
-            padding: 6px;
-            &:hover{
-                transform: scale(2);
+        padding: 40px;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:50px 220px 220px 200px 40px ;
+
+        grid-template-areas: 
+        "subtitulo "
+        "footer-contacto"
+        "footer-ubicacion"
+        "footer-redes"
+        "footer-firma"
+        ;
+
+        .subtitulo{
+            grid-area: subtitulo ;
+        }
+        .footer-contacto{
+            grid-area: footer-contacto;
+        }
+        .footer-ubicacio{
+            grid-area: footer-ubicacion;
+        }
+        .footer-redes{
+            grid-area: footer-redes;
+        }
+        .footer-firma{
+            grid-area: footer-firma;
+        }
+
+    
+
+        h2{
+            color: rgba(236, 11, 11, 0.836);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .footer-contacto{
+           align-items: center;
+           ul{
+            list-style: none;
+                li{
+                    text-decoration: none;
+                }
+           }
+                     
+        }
+        .footer-ubicacion{
+            iframe{
+                border-radius: 10px;
+                border: red 2px solid;
+             } 
+        }
+
+
+        .footer-redes{
+           
+            i{
+                font-size: 2.5rem;
+                padding: 12px;
+                &:hover{
+                    transform: scale(2);
+                }
+            
             }
         }
+      
+        
+        }  
+        h4{
+            padding: 10px;
+            text-align: center;
+            font-size:1rem;
+            color: darkred;
+        
+        }
+  }
+
+  @media (min-width: 1024px){
+    footer{
+    .div-footer{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:60px 200px 40px ;
+
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo"
+    "footer-contacto footer-ubicacion footer-redes"
+    "footer-firma footer-firma footer-firma"
+    ;
+    .subtitulo{
+        grid-area: subtitulo ;
     }
-    h4{
-        text-align: center;
-        font-size: 0.5rem;
-        color: darkred;
-        background-color: rgba(0, 0, 0, 0.877);
+    .footer-contacto{
+        grid-area: footer-contacto;
+    }
+    .footer-ubicacio{
+        grid-area: footer-ubicacion;
+    }
+    .footer-redes{
+        grid-area: footer-redes;
+    }
+    .footer-firma{
+        grid-area: footer-firma;
     }
 
+    }
+}
 }
 
